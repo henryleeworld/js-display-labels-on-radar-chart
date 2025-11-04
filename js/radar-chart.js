@@ -201,19 +201,22 @@ var config = {
                 padding: 8
             },
             legend: {
+                display: true,
                 onClick: function(event, legendItem) {},
                 position: 'bottom',
             },
+            /*
+            title: {
+                display: true,
+                text: '灌籃高手雷達圖'
+            },
+            */
         },
-        /*
-        title: {
-            display: true,
-            text: '灌籃高手雷達圖'
-        },
-        */
         scale: {
-            ticks: {
-                beginAtZero: true
+            r: {
+                ticks: {
+                    beginAtZero: true
+                }
             }
         }
     }
@@ -242,4 +245,6 @@ function convertHexToRGBA(hexCode, opacity) {
 function done() {
     var url = window.radarChart.toBase64Image();
     document.getElementById("chart-url").src = url;
+    document.getElementById('chart-area').style.display = 'none';
+    document.getElementById('chart-url').classList.remove('d-none');
 }

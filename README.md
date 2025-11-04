@@ -11,5 +11,5 @@ $ git clone
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/q9grV2a.png)
+![](https://i.imgur.com/0MBup7p.png)
 > 雷達圖是根據多個指標比較維度成員的好方法
